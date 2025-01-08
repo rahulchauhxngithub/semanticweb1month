@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Logs - Travel Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-btn">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button id="login-btn">Login</button>
+        </nav>
+    </header>
+    <main>
+        <section class="travel-logs-section">
+            <h1>My Travel Logs</h1>
+            <p>Share your travel experiences and memories.</p>
+            <form id="travel-logs-form">
+                <label for="log-title">Title:</label>
+                <input type="text" id="log-title" name="log-title" placeholder="Trip Title" required>
+                
+                <label for="log-destination">Destination:</label>
+                <input type="text" id="log-destination" name="log-destination" placeholder="Destination" required>
+                
+                <label for="log-date">Date:</label>
+                <input type="date" id="log-date" name="log-date" required>
+                
+                <label for="log-description">Description:</label>
+                <textarea id="log-description" name="log-description" rows="5" placeholder="Share your experience..." required></textarea>
+                
+                <button type="submit">Submit Log</button>
+            </form>
+            
+            <h2>Your Logs</h2>
+            <div id="logs-container">
+                <!-- User travel logs will be displayed here -->
+                <p>No travel logs yet. Start by adding a new log above!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Travel Page. All rights reserved.</p>
+    </footer>
+    <script>
+        // Simple implementation for displaying travel logs (No backend)
+        const travelLogsForm = document.getElementById('travel-logs-form');
+        const logsContainer = document.getElementById('logs-container');
+
+        travelLogsForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const title = document.getElementById('log-title').value;
+            const destination = document.getElementById('log-destination').value;
+            const date = document.getElementById('log-date').value;
+            const description = document.getElementById('log-description').value;
+
+            const logEntry = document.createElement('div');
+            logEntry.classList.add('testimonial-card'); // Reusing styles
+
+            logEntry.innerHTML = `
+                <p><strong>${title}</strong> - ${destination} (${date})</p>
+                <p>${description}</p>
+            `;
+
+            logsContainer.innerHTML = ''; // Clear previous message
+            logsContainer.appendChild(logEntry);
+
+            travelLogsForm.reset();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>General Food Order</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional styling for the order page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #f8b400;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    input[type="number"] {
+      font-size: 18px;
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #f8b400;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Food4You - Order Now</h1>
+  </header>
+
+  <section>
+    <h2>Place Your Order for General Food</h2>
+    <p id="order-description">You are ordering: General Food</p>
+
+    <form id="order-form">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+      <br><br>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </section>
+
+  <script>
+    // Fetch the item name from the query parameter
+    const params = new URLSearchParams(window.location.search);
+    const item = params.get("item");
+
+    // Update the page content with the selected item
+    if (item) {
+      document.getElementById("order-description").textContent = `You are ordering: ${item}`;
+    }
+
+    // Handle form submission
+    document.getElementById("order-form").onsubmit = function(event) {
+      event.preventDefault();
+      const quantity = document.getElementById("quantity").value;
+      alert(`Your order for ${quantity} x ${item} has been placed!`);
+      // Redirect back to the main page or a confirmation page
+      window.location.href = "index.html";  // Example: Redirect back to the homepage
+    };
+  </script>
+
+</body>
+</html>

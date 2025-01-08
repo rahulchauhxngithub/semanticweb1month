@@ -1,0 +1,335 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#contact-us-btn, #login-btn, #register-btn {
+    background-color: #ff5f5f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-us-btn:hover, #login-btn:hover, #register-btn:hover {
+    background-color: #ff3232;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #0066cc, #003366);
+    color: white;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#reserve-ticket-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reserve-ticket-btn:hover {
+    background-color: #ffaa00;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    padding: 20px;
+    background: #e9f5ff;
+    margin: 20px 0;
+}
+
+.search-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-section input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-section button {
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.search-section button:hover {
+    background: #ff5722;
+}
+
+/* Destinations Section */
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    padding: 0 10px 10px 10px;
+    flex-grow: 1;
+}
+
+.book-now-btn {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.testimonial-card h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Explore Section */
+.explore {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.explore h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.explore p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Forms */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #005bb5;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0078d4;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-right: 0;
+    }
+
+    .search-section input {
+        width: 80%;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+}

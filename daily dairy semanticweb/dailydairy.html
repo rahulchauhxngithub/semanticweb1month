@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Web Daily Diary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #808080; /* Background color */
+      color: white; /* Text color */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px;
+    }
+    .day-button {
+      background-color: #007BFF; /* Button color */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .day-button:hover {
+      background-color: #0056b3; /* Hover effect */
+    }
+    .content-container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>TR-103 Semantic Web Daily Diary</h1>
+  <div class="button-container">
+    <!-- Buttons for each day -->
+    <button class="day-button" onclick="showContent(1)">Day 1</button>
+    <button class="day-button" onclick="showContent(2)">Day 2</button>
+    <button class="day-button" onclick="showContent(3)">Day 3</button>
+    <button class="day-button" onclick="showContent(4)">Day 4</button>
+    <button class="day-button" onclick="showContent(5)">Day 5</button>
+    <button class="day-button" onclick="showContent(6)">Day 6</button>
+    <button class="day-button" onclick="showContent(7)">Day 7</button>
+    <button class="day-button" onclick="showContent(8)">Day 8</button>
+    <button class="day-button" onclick="showContent(9)">Day 9</button>
+    <button class="day-button" onclick="showContent(10)">Day 10</button>
+    <button class="day-button" onclick="showContent(11)">Day 11</button>
+    <button class="day-button" onclick="showContent(12)">Day 12</button>
+    <button class="day-button" onclick="showContent(13)">Day 13</button>
+    <button class="day-button" onclick="showContent(14)">Day 14</button>
+    <button class="day-button" onclick="showContent(15)">Day 15</button>
+    <button class="day-button" onclick="showContent(16)">Day 16</button>
+    <button class="day-button" onclick="showContent(17)">Day 17</button>
+    <button class="day-button" onclick="showContent(18)">Day 18</button>
+    <button class="day-button" onclick="showContent(19)">Day 19</button>
+    <button class="day-button" onclick="showContent(20)">Day 20</button>
+  </div>
+
+  <div id="content-container" class="content-container">
+    <h2>Welcome to the Semantic Web Daily Diary</h2>
+    <p>Click on a day to see the content.</p>
+  </div>
+
+  <script>
+    // Daily content for Semantic Web
+    const content = {
+      1: "The Semantic Web is an extension of the current web that enables machines to understand and interpret the meaning of data in a way that facilitates intelligent querying and reasoning. On Day 1, the focus is on understanding the foundations of the Semantic Web, beginning with the Resource Description Framework (RDF). RDF is a standard model for representing data on the web. It allows data to be represented in a triple format, consisting of subject-predicate-object, forming the basic building blocks for describing resources and relationships.",
+      
+      2: "Day 2 dives deeper into the syntax and vocabulary used in RDF. RDF utilizes a simple, flexible syntax to represent relationships and data structures. The syntax includes elements such as URIs (Uniform Resource Identifiers), literals (strings, numbers), and blank nodes. The vocabulary in RDF refers to the specific terms used to define the relationships between resources. Understanding this syntax is crucial for constructing meaningful triples that describe real-world data.",
+      
+      3: "Day 3 introduces the Web Ontology Language (OWL), which is designed to represent complex relationships and classify entities in the Semantic Web. OWL extends RDF by providing richer expressiveness and allows for the creation of formal ontologies that define classes, properties, and constraints. OWL enables machines to perform reasoning over the data, allowing more sophisticated queries and inferences about relationships between resources.",
+      
+      4: "Ontologies are central to the Semantic Web. They provide a structured framework to represent knowledge about a particular domain. Day 4 explores how ontologies define concepts, relationships, and rules within a specific domain. These structured models facilitate data interoperability, sharing, and querying across different systems. Applications of ontologies include knowledge management, artificial intelligence, and automated decision-making.",
+      
+      5: "SPARQL is a query language designed specifically for querying RDF data. On Day 5, learners are introduced to SPARQL’s syntax and structure, enabling them to retrieve specific data from RDF datasets. SPARQL supports various types of queries, such as SELECT, CONSTRUCT, ASK, and DESCRIBE, allowing users to query, manipulate, and extract information from RDF graphs effectively.",
+      
+      6: "Day 6 covers advanced SPARQL query techniques that extend basic querying capabilities. Topics include filtering results, using optional patterns, aggregation, and creating more complex queries that involve multiple joins. These advanced techniques allow users to extract more detailed and meaningful data from RDF graphs and perform sophisticated analysis on linked data.",
+      
+      7: "On Day 7, the focus shifts to Linked Data, a key concept in the Semantic Web. Linked Data principles involve creating relationships between data on the web using RDF and providing URIs for entities so that data can be connected across different datasets. This process ensures that data can be easily discovered, navigated, and integrated across diverse domains.",
+      
+      8: "Day 8 introduces several popular tools for ontology development, such as Protégé, TopBraid, and OWLGrEd. These tools facilitate ontology creation, visualization, and management, and they allow users to define classes, properties, and relationships within an ontology while ensuring adherence to formal semantics.",
+      
+      9: "Day 9 highlights real-world examples of how the Semantic Web is applied in various industries. Use cases include knowledge management in enterprises, enhancing search engine results through structured data, e-commerce product recommendations, and healthcare data interoperability. By examining these examples, learners can gain insights into the practical benefits of implementing Semantic Web technologies.",
+      
+      10: "On Day 10, learners get hands-on experience in constructing and querying RDF graphs. RDF graphs represent interconnected data, with resources (nodes) and relationships (edges) forming the graph structure. Students will build simple RDF graphs and use SPARQL to query the data. This practice reinforces the theoretical concepts learned and provides practical experience in handling Semantic Web data.",
+      
+      11: "Day 11 focuses on the integration of the Semantic Web with Artificial Intelligence (AI). The combination of structured, machine-readable data and AI technologies opens up new possibilities for intelligent systems. Topics include how ontologies can support AI reasoning, how linked data improves machine learning models, and how AI-powered applications can use Semantic Web technologies for enhanced decision-making and automation.",
+      
+      12: "Day 12 explores the diverse real-world applications of Semantic Web technologies. Examples include enhancing search engines with rich metadata, improving data integration across platforms in the healthcare industry, and creating intelligent recommendation systems in e-commerce. By understanding these applications, learners can appreciate the transformative potential of Semantic Web technologies across industries.",
+      
+      13: "Knowledge graphs, which represent information as a network of interconnected entities, are a vital component of the Semantic Web. On Day 13, learners explore how knowledge graphs are used to store and represent structured knowledge, allowing for intelligent querying and reasoning. They will learn how these graphs underpin applications in areas such as search engines (e.g., Google Knowledge Graph) and enterprise data management.",
+      
+      14: "On Day 14, the focus is on the challenges associated with achieving interoperability in the Semantic Web. Although Semantic Web technologies promote data integration, there are significant challenges in harmonizing diverse datasets, resolving inconsistencies, and ensuring data privacy and security. This day will delve into these obstacles and the strategies being developed to overcome them.",
+      
+      15: "Day 15 introduces various frameworks and APIs that facilitate the development of Semantic Web applications. These tools provide pre-built functionalities for managing RDF data, querying with SPARQL, and integrating ontologies. Popular frameworks include Apache Jena and RDFLib, which offer libraries and tools for building Semantic Web applications in languages like Java and Python.",
+      
+      16: "Web scraping plays a crucial role in collecting linked data from diverse web sources. On Day 16, learners explore how web scraping techniques can be used to gather data from websites, transform it into RDF format, and integrate it into Linked Data ecosystems. This practice allows developers to tap into open data sources and enhance their Semantic Web projects with additional information.",
+      
+      17: "Day 17 focuses on semantic annotations and the use of metadata to add context to data. By annotating data with semantic tags, developers can enhance the meaning and accessibility of information. Semantic annotations enable machines to interpret data more effectively, improving search, discovery, and analysis. This is crucial in fields such as academic research, where metadata provides valuable insights into the content.",
+      
+      18: "The Internet of Things (IoT) and the Semantic Web are interconnected. On Day 18, learners explore how Semantic Web technologies can help IoT devices interoperate by providing structured metadata and using ontologies to describe devices and sensor data. This integration can lead to smarter systems that enable devices to work together more seamlessly, improving automation and decision-making in IoT applications.",
+      
+      19: "On Day 19, learners apply their knowledge by designing a small ontology for a specific domain, such as a library, e-commerce store, or healthcare system. They will define the entities, relationships, and rules that govern their domain, creating a structured representation of knowledge that can be queried and reasoned over. This hands-on project helps solidify understanding and provides practical experience in ontology design.",
+      
+      20: "The final day of the course looks ahead to the future of the Semantic Web and emerging trends in the field. Topics include the potential impact of AI and machine learning on the Semantic Web, the evolution of Linked Data, and how technologies like blockchain may play a role in data sharing and interoperability. This day also explores new advancements in data privacy, security, and decentralized data management that will shape the future of the Semantic Web."
+    };
+
+    // Function to display content for a specific day
+    function showContent(day) {
+      const contentContainer = document.getElementById('content-container');
+      contentContainer.innerHTML = `
+        <h2>Day ${day} Content</h2>
+        <p>${content[day]}</p>
+      `;
+    }
+  </script>
+</body>
+</html>

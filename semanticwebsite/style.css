@@ -1,0 +1,230 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  .contact-info {
+    font-size: 0.8em;
+    text-align: right;
+    color: #666;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #ffe98a;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .hero h2 span {
+    color: red;
+  }
+  
+  .hero p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .order-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .order-btn:hover {
+    background: #555;
+  }
+  
+  /* Choose & Enjoy Section */
+  .choose-enjoy, .menu-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .choose-enjoy h2, .menu-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .choose-enjoy p, .menu-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-items .item {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .menu-items img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+  }
+  
+  .menu-items h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .menu-items p {
+    color: #666;
+  }
+  
+  .menu-items button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-items button:hover {
+    background: #218838;
+  }
+  
+  /* Events Section */
+  .events {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .events h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .events p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .event-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .event-gallery img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+  }
+  
+  /* Our Story Section */
+  .our-story {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .our-story h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .our-story p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Contact Us Section */
+  .contact-us {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .contact-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-us label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-us button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-us button:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

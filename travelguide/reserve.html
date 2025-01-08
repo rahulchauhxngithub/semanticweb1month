@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Ticket - Travel Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-btn">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button id="login-btn">Login</button>
+        </nav>
+    </header>
+    <main>
+        <section class="reserve-section">
+            <h1>Reserve Your Ticket</h1>
+            <form id="reserve-form">
+                <label for="reserve-destination">Destination:</label>
+                <input type="text" id="reserve-destination" name="reserve-destination" placeholder="Enter your destination" required>
+                
+                <label for="reserve-date">Travel Date:</label>
+                <input type="date" id="reserve-date" name="reserve-date" required>
+                
+                <label for="reserve-passengers">Number of Passengers:</label>
+                <input type="number" id="reserve-passengers" name="reserve-passengers" min="1" required>
+                
+                <button type="submit">Reserve</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Travel Page. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

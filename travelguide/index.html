@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-btn">☰</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button id="login-btn">Login</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h1>Travel to Your Dream Destination</h1>
+                <p>Plan your next adventure with us! Discover, book, and experience the world.</p>
+                <button id="reserve-ticket-btn">Reserve Ticket</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/destination.jpeg" alt="Dream Destination">
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <h2>Find Your Next Destination</h2>
+            <form id="search-form">
+                <input type="text" placeholder="Search by destination or keyword" id="search-input">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Destinations -->
+        <section class="destinations" id="guides">
+            <div class="card">
+                <img src="images/destination1.jpeg" alt="Paris, France">
+                <h3>Paris, France</h3>
+                <p>The city of love awaits you with its iconic Eiffel Tower and rich culture.</p>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/destination2.jpeg" alt="Bali, Indonesia">
+                <h3>Bali, Indonesia</h3>
+                <p>Escape to the tropical paradise with pristine beaches and lush landscapes.</p>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/destination3.jpeg" alt="Tokyo, Japan">
+                <h3>Tokyo, Japan</h3>
+                <p>Experience the perfect blend of tradition and modernity in Tokyo.</p>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-card">
+                <p>"The trip to Bali was amazing! Everything was well-organized."</p>
+                <h4>- Emily Johnson</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Booking through this site was so easy, and the recommendations were spot on!"</p>
+                <h4>- James Smith</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I loved the user-friendly interface and personalized suggestions."</p>
+                <h4>- Maria Garcia</h4>
+            </div>
+        </section>
+
+        <!-- Explore Section -->
+        <section class="explore" id="about">
+            <h2>See Places You've Never Been Before</h2>
+            <p>Discover hidden gems and unique cultures across the globe.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel Page. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
